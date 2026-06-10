@@ -277,7 +277,7 @@
         }
         .q-phone-wrap { margin-bottom: 28px; }
         .q-input {
-            display: block; width: 100%; height: 52px;
+            display: block; width: 100%; height: 52px !important; min-height: 52px !important;
             padding: 0 16px; margin: 0;
             background: var(--c-surface); border: 1.5px solid transparent;
             border-bottom: 1.5px solid var(--c-line); border-radius: 0;
@@ -414,7 +414,7 @@
             line-height: 1.5; margin-bottom: 20px;
             justify-content: center; text-align: center;
         }
-        .q-terms-row input { margin-top: 3px; cursor: pointer; accent-color: var(--c-ink); flex-shrink: 0; }
+        .q-terms-row input[type="checkbox"] { -webkit-appearance: auto !important; appearance: auto !important; opacity: 1 !important; position: static !important; width: 16px !important; height: 16px !important; min-height: 16px !important; margin: 3px 0 0 0 !important; cursor: pointer; accent-color: var(--c-ink); flex-shrink: 0; }
         .q-terms-row a { color: var(--c-ink); text-decoration: underline; text-underline-offset: 2px; }
 
         /* ── CTA buttons ── */
@@ -632,7 +632,7 @@
                     <!-- Persistent header (all steps) -->
                     <div id="q-header-provador">
                         <h1>Provador Virtual</h1>
-                        <img src="https://acdn-us.mitiendanube.com/stores/947/410/themes/common/logo-994935221-1640612665-efa0cf879d5bf19625acbd1de0020cd61640612665.png" alt="MAHO SUNGLASSES" style="height:48px;width:auto;filter:brightness(0);"/>
+                        <img src="https://acdn-us.mitiendanube.com/stores/947/410/themes/common/logo-994935221-1640612665-efa0cf879d5bf19625acbd1de0020cd61640612665.png" alt="MAHO SUNGLASSES" style="height:48px;width:auto;"/>
                     </div>
 
                     <!-- Main step -->
