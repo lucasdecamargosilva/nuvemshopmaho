@@ -55,8 +55,8 @@
     window.PROVOU_LEVOU_API_KEY = apiKey;
 
     const WEBHOOK_PROVA = 'https://n8n.segredosdodrop.com/webhook/gerador-oculos';
-    const WEBHOOK_PIX = 'https://n8n.segredosdodrop.com/webhook/maho-pix';
-    const WEBHOOK_PIX_STATUS = 'https://n8n.segredosdodrop.com/webhook/maho-pix-status';
+    const WEBHOOK_PIX = 'https://n8n.segredosdodrop.com/webhook/cacife-pix';
+    const WEBHOOK_PIX_STATUS = 'https://n8n.segredosdodrop.com/webhook/cacife-pix-status';
     const WEBHOOK_CHECK_LIMIT = 'https://n8n.segredosdodrop.com/webhook/maho-check-limit';
     const SIZES_TOP = ['XXP', 'XP', 'P', 'M', 'G', 'XG', 'XXG', '3XG', '4XG', '5XG'];
     const SIZES_BOTTOM = ['36/XXP', '38/XP', '40/P', '42/M', '44/G', '46/XG', '48/XXG', '50/3XG', '52/4XG', '54/5XG'];
@@ -1699,7 +1699,7 @@ const fd = new FormData();
                 const data = await resp.json();
                 if (data.limited) {
                     genBtn.disabled = false;
-                    document.querySelectorAll('.q-provas-msg').forEach(el => { el.textContent = 'Limite de 3 provas por dia atingido — volte amanhã'; el.classList.add('is-warn'); });
+                    createPixAndPoll();
                     return;
                 }
             } catch (_) {
