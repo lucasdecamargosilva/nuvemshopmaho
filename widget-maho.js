@@ -986,7 +986,11 @@
     // ─── INIT ─────────────────────────────────────────────────────────────────────
 
 
+    // ─── KILL SWITCH TEMPORÁRIO: provador desligado no front (backend segue ativo) ───
+    var PL_PROVADOR_OFF = true;
+
     function init() {
+        if (PL_PROVADOR_OFF) return; // provador da Maho pausado temporariamente
         // --- FILTRO DE CATEGORIA (HAT) ---
         const productNameNormalized = (document.querySelector('h1.product__title,.product-single__title,h1')?.innerText || document.title).toUpperCase();
         if (productNameNormalized.includes('HAT')) {
