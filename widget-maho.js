@@ -994,7 +994,7 @@
 
 
     // ─── KILL SWITCH TEMPORÁRIO: provador desligado no front (backend segue ativo) ───
-    var PL_PROVADOR_OFF = true;   // desligado 02/10/2026 a pedido do Lucas. Religar = false
+    var PL_PROVADOR_OFF = false;   // religado 08/10/2026 a pedido do Lucas (estava desligado desde 02/10). Desligar = true
 
     function init() {
         if (PL_PROVADOR_OFF) return; // provador da Maho pausado temporariamente
